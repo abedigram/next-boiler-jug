@@ -1,5 +1,5 @@
 {
-  "name": "next-boiling-jug",
+  "name": "next-boiler-jug",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.2",
     "antd": "^5.10.3",
-    "next": "14.0.1",
+    "next": "13.5.6",
     "react": "^18",
     "react-dom": "^18"
   },
