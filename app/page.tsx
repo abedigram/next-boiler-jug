@@ -1,7 +1,18 @@
-import React from "react";
+import Map from "@/app/components/Map";
 
 const Home = function Home() {
-  return <></>;
+  return (
+    <>
+      <div
+        style={{
+          width: "50%",
+          height: "500px",
+        }}
+      >
+        <Map />
+      </div>
+    </>
+  );
 };
 
 export default Home;
