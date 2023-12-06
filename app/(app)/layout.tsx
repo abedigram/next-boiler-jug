@@ -1,10 +1,11 @@
-import StyledComponentsRegistry from "@/lib/AntdRegistry";
+import StyledComponentsRegistry from "@/lib/antdRegistry";
 import theme from "@/theme/themeConfig";
 import { ConfigProvider } from "antd";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
-import "./globals.css";
+import "../globals.css";
+import StoreProvider from "@/app/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <StoreProvider >
         <StyledComponentsRegistry>
           <ConfigProvider theme={theme}>{children}</ConfigProvider>
         </StyledComponentsRegistry>
+      </StoreProvider>
       </body>
     </html>
   );
