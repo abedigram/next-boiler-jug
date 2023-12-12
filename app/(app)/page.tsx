@@ -1,10 +1,10 @@
-'use client'
-import {useAppDispatch, useAppSelector} from '@/lib/hooks'
+import Link from "next/link";
 
-const Home = () => {
-    const count = useAppSelector(state => state.counter.value)
-    const dispatch = useAppDispatch()
+export default async function Home() {
 
-    return (<></>)
+    return (
+        <>
+            <Link href='/posts'>click me!</Link>
+        </>
+    )
 }
-export default Home

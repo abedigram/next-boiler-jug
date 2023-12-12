@@ -1,10 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
-import {counterSlice} from "@/app/(app)/counter/counterSlice";
+import {configureStore} from '@reduxjs/toolkit'
+import {postsSlice} from "@/app/(app)/posts/postsSlice";
 
 export const makeStore = () => {
     return configureStore({
         reducer: {
-            counter: counterSlice.reducer
+            posts: postsSlice.reducer
         }
     })
 }
