@@ -1,12 +1,12 @@
-import {configureStore} from '@reduxjs/toolkit'
-import {postsSlice} from "@/app/(app)/posts/postsSlice";
+import { configureStore } from '@reduxjs/toolkit'
+import { postsSlice } from '@/app/posts/postsSlice'
 
 export const makeStore = () => {
-    return configureStore({
-        reducer: {
-            posts: postsSlice.reducer
-        }
-    })
+  return configureStore({
+    reducer: {
+      posts: postsSlice.reducer,
+    },
+  })
 }
 
 /** ts specific exports */
