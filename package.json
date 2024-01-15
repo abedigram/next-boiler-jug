@@ -10,9 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.17.2",
+    "@ant-design/cssinjs": "^1.18.2",
     "@reduxjs/toolkit": "^1.9.7",
-    "antd": "^5.10.3",
+    "antd": "^5.13.0",
     "axios": "^1.6.2",
     "next": "13.5.6",
     "next-redux-wrapper": "^8.1.0",
